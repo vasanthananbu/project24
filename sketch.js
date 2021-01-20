@@ -19,8 +19,8 @@ function setup() {
 
 	hammer = new Hammer(100, 100);
 	
-	stone = new Stone(650,200,70,70)
-	rubber = new Rubber(400,300)
+	stone = new Stone(650,200,70,70);
+	rubber = new Rubber(400,300);
 
 	sand1 = new Sand(800,300);
 	sand2 = new Sand(700,300);
@@ -40,9 +40,9 @@ function setup() {
 
 
 function draw() {
-	rectMode(CENTER);
 	background("lightBlue");
-  
+	Engine.update(engine);
+	
 	hammer.display();
 	plane.display();
 	stone.display();
@@ -61,6 +61,4 @@ function draw() {
 
 	iron.display();
 }
-
-
 
